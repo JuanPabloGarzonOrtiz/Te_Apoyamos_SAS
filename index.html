@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis de Requerimientos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <script src="static/js/scripts.js"></script>
+    <div class="container-fluid">
+        <header class="row justify-content-between align-items-center">
+            <div class="col-auto">
+                <img src="logo.png" alt="logo" style="height: 100px;">
+            </div>
+            <nav class="col-8 d-flex justify-content-around">
+                <ul class="menu">
+                    <li>
+                        <a href="#analisis_de_problema">Analisis de Problema</a>
+                        <ul class="submenu">
+                            <li><a href="#problematica">Problematica</a></li>
+                            <li><a href="#matriz_de_Trazabilidad">Matriz de Trazabilidad</a></li>
+                            <li><a href="#roles_de_Usuario">Roles de Usuario</a></li>
+                            <li><a href="#wireframes">Wireframes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#Frameworks">Frameworks</a>
+            </nav>
+        </header>
+        <main>
+            <h1 class="text-center" id="analisis_de_problema">Analisis de Problema</h1>
+            <section id="problematica">
+                <h2>Problematica Planteada</h2>
+                <p>La firma de abogados “Te apoyamos SAS”, está conformada por un equipo de profesionales disponibles para brindar asesoría legal y apoyo en la toma de decisiones en entornos profesionales donde el marco legal es un referente importante para el desarrollo y desempeño correcto de una organización.
+                    Con el fin ampliar su cobertura de servicios, requiere el apoyo de un profesional en el desarrollo de software que le brinde una herramienta con la cual se dé a conocer en el mercado global a través de la internet.
+                    La visión general que tienen sobre la aplicación web que desean adquirir es:</p>
+                <ol>
+                    <li>Disponer de un espacio que brinde información sobre la firma, trayectoria, servicios ofertados por la firma, noticias de interés de orden legal para el público en general, perfil general de los profesionales adscritos a la firma y su ubicación dentro del territorio Nacional, reconocimientos, alianzas y formas de contacto.</li>
+                    <li>Disponer de un espacio en donde los profesionales del gremio interesados en trabajar con la firma registren la hoja de vida para su estudio y la respectiva evaluación de la hoja de vida, en donde se valide si es aceptado no el profesional.</li>
+                    <li>Disponer de un espacio correspondiente a los procesos que se adelantan por cada profesional en donde se registren los datos del cliente, tipo de proceso que se lleva y los avances de este.</li>
+                </ol>
+            </section>
+            <section id="matriz_de_Trazabilidad">
+                <h2>Matriz de Trazabilidad</h2>
+                <div class="table-responsive-md">
+                    <table class="table-bordered">
+                        <thead style="background-color: rgb(110, 11, 11);">
+                            <tr>
+                                <th>ID</th>
+                                <th>Sub-ID</th>
+                                <th>Descripción del Requisito</th>
+                                <th>Versión</th>
+                                <th>Estado Actual</th>
+                                <th>Tipo de Requerimiento</th>
+                                <th>Ultima Fecha de Estado de Registro</th>
+                                <th>Nivel de Complejidad</th>
+                                <th>Partes Interesadas</th>
+                                <th>Nivel de Prioridad</th>
+                            </tr>
+                        </thead>
+                        <tbody style="background-color: black;">
+                            <tr>
+                                <td>R.F.1</td>
+                                <td>R.F.1</td>
+                                <td><strong>Pagina de Presentación:</strong> 
+                                    Implementar una Página de Presentación de la Firma, en la cual se tenga una información más detallada de la misma, para que el usuario pueda conocer más a fondo la Firma.</td>
+                                <td>1.0</td>
+                                <td>Aprobado</td>
+                                <td>Funcional</td>
+                                <td>16/02/2025</td>
+                                <td>Baja</td>
+                                <td>Firma,
+                                    Desarrollador,
+                                    Administrado de Base de Datos,
+                                    Cliente.</td>
+                                <td>Alta</td>
+                            </tr>
+                            <tr>
+                                <td>R.F.2</td>
+                                <td>R.F.2</td>
+                                <td><strong>Pagina de Procesos Activos:</strong>
+                                    Se creaba una Página que para su acceso se necesitara privilegios, ya que en ella se podría realizar una vista de los procesos que están activos, el estado de lo mismo y a cuál Abogado están asignados. </td>
+                                <td>1.0</td>
+                                <td>Aprobado</td>
+                                <td>Funcional</td>
+                                <td>16/02/2025</td>
+                                <td>Alta</td>
+                                <td>Firma,
+                                    Desarrollador,
+                                    Administrado de Base de Datos,
+                                    Cliente.</td>
+                                <td>Alta</td>
+                            </tr>
+                            <tr>
+                                <td>R.F.3</td>
+                                <td>R.F.3</td>
+                                <td><strong>Pagina de Postución:</strong>
+                                    Implementar una Página donde los Abogados interesados en pertenecer a la firma, puedan postularse con su Hoja de Vida, y posteriormente puedan verificar el estado de la Postulación.</td>
+                                <td>1.0</td>
+                                <td>Aprobado</td>
+                                <td>Funcional</td>
+                                <td>16/02/2025</td>
+                                <td>Alta</td>
+                                <td>Firma,
+                                    Desarrollador,
+                                    Administrado de Base de Datos,
+                                    Abogado,
+                                    Candidato.</td>
+                                <td>Alta</td>
+                            </tr>
+                            <tr>
+                                <td>R.F.4</td>
+                                <td>R.F.4</td>
+                                <td><strong>Base de Datos:</strong>
+                                    Implementación de una Base de Datos para poder almacenar información que se presenta de los Abogados Adscritos a la Marca, Profesionales postulados a trabajos y procesos, información de la Firma, etc.</td>
+                                <td>1.0</td>
+                                <td>Aprobado</td>
+                                <td>Funcional</td>
+                                <td>16/02/2025</td>
+                                <td>Alta</td>
+                                <td>Firma,
+                                    Desarrollador,
+                                    Administrado de Base de Datos,
+                                    Cliente.</td>
+                                <td>Alta</td>
+                            </tr>
+                            <tr>
+                                <td>R.NF.1</td>
+                                <td>R.NF.1</td>
+                                <td><strong>Bominio:</strong>
+                                    Implementar un Dominio que permita el fácil acceso e identificación de la Página de Firma de una manera fácil y accesible para los usuarios.</td>
+                                <td>1.0</td>
+                                <td>Aprobado</td>
+                                <td>No Funcional</td>
+                                <td>16/02/2025</td>
+                                <td>Medio</td>
+                                <td>Firma,
+                                    Desarrollador,
+                                    Cliente.</td>
+                                <td>Alta</td>
+                            </tr>
+                            <tr>
+                                <td>R.NF.2</td>
+                                <td>R.NF.2</td>
+                                <td><strong>Diseño Responsivo:</strong>
+                                    Permitir que el Diseño del Sitio Web sea Responsivo y se adapte a diferentes tipos de Dispositivos y Navegadores.</td>
+                                <td>1.0</td>
+                                <td>Aprobado</td>
+                                <td>No Funcional</td>
+                                <td>16/02/2025</td>
+                                <td>Medio</td>
+                                <td>Firma,
+                                    Desarrollador,
+                                    Cliente.</td>
+                                <td>Alta</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="roles_de_Usuario">
+                <h2>Roles de Usuario</h2>
+                <h3>Cliente</h3>
+                <p><strong>Descripción: </strong>Es el que accede a la Página Web en la Búsqueda de conocer la Página Web, en búsqueda de un Servicio dado por la Firma de Abogados.</p>
+                <p><strong>Permisos:</strong></p>
+                <ol>
+                    <li>Acceso a las Secciones Públicas de la Página Web.</li>
+                    <li>Petición de Servicio de Representación por un Abogado de la Firma de Abogados.</li>
+                </ol>
+                <h3>Abogado</h3>
+                <p><strong>Descripción: </strong>Es el Profesional contratado por la Firma de Abogados que puede llevar los Casos  Legales que la firma le asigne.</p>
+                <p><strong>Permisos:</strong></p>
+                <ol>
+                    <li>Acceso a las Secciones Públicas de la Página Web.</li>
+                    <li>Acceso a la Página de los Procesos Activos que tiene a su nombre registrados, y capacidad de actualizar información de los mismos.</li>
+                </ol>
+                <h3>Firma</h3>
+                <p><strong>Descripción: </strong>Es la Empresa que se dedica a la Representación Legal, más conocida como Firma de Abogados, esta es la Cara de todos los Abogados Adscritos a la misma. </p>
+                <p><strong>Permisos:</strong></p>
+                <ol>
+                    <li>Acceso total a cualquier parte de la Página con todos los Privilegios.</li>
+                    <li>Capacidad de realizar peticiones al Desarrollador para actualizar la Página Web según la necesidad que tenga la Firma.</li>
+                </ol>
+                <h3>Desarrollador de Software</h3>
+                <p><strong>Descripción: </strong>Es el Desarrollador que se encarga de la creación de Proyecto de Software, en este caso el Sitio Web. </p>
+                <p><strong>Permisos:</strong></p>
+                <ol>
+                    <li>Acceso total a cualquier parte de la Página con todos los Privilegios.</li>
+                    <li>Capacidad de realizar cambios de la Página Web y la Estructura del Proyecto según las necesidades del mismo o peticiones la Firma de Abogados. </li>
+                </ol>
+                <h3>Administrador de Base de Datos</h3>
+                <p><strong>Descripción: </strong>Es el Desarrollador que se encarga de la creación de Proyecto de Software, en este caso el Sitio Web. </p>
+                <p><strong>Permisos:</strong></p>
+                <ol>
+                    <li>Cambio de la Estructura de la Base de Datos.</li>
+                    <li>Migración de Sistemas Gestores de Bases de Datos según la necesidad.</li>
+                    <li>Encargado de la integridad de los Datos que están almacenados. </li>
+                </ol>
+                <h3>Candidato</h3>
+                <p><strong>Descripción: </strong>Es un abogado que quiere pertenecer a la Firma de Abogados y accede a la Página Web con el fin de postularse y con el objetivo que lo acepten entre sus abogados.</p>
+                <p><strong>Permisos:</strong></p>
+                <ol>
+                    <li>Acceso a las Secciones Públicas de la Página Web.</li>
+                    <li>Envío de Hoja de Vida para el Estudio de Curriculum.</li>
+                    <li>Acceso a Estado de Postulación.</li>
+                </ol>
+            </section>
+            <section  class="wireframes" id="wireframes">
+                <h2>Wireframes</h2>
+                <h3>Pagina Inicial</h3>
+                <div class="wireframe">
+                    <img src="imgs/Index.png" class="img-fluid mx-auto d-block">
+                    <p>Página de Inicio, es la Página del Sitio Web que da la bienvenida a todos los que ingresen a la Pagana de la Firma de Abogados, en esta se presente una Header con los enlaces a las principales secciones del Sitio Web acompañadas al inicio del Logo de la Firma de Abogados, en el Body de la Página podemos ver una frase que representa a la Firma y un botón para que pueda el usuario desplazarse directamente a solicitar una Asesoría.</p>
+                </div>
+                <h3>Servicios</h3>
+                <div class="wireframe-reverse">
+                    <img src="imgs/Servicios.png" class="img-fluid mx-auto d-block">
+                    <p>Página de Servicios, es la Página donde se pueden ver un Listado de los Servicios que brinda la Firma, destacando al inicio los Servicios en los que mejores servicios brindan y después un listado del resto de servicios que tienen para ofrecer como firma.
+                        En esta Página el Hender cambiar de posición, de la parte superior al lateral izquierdo para brindar un diseño un poco diferente y destacado, permitiendo una interfaz más limpia. </p>
+                </div>
+                <h3>Abogados</h3>
+                <div class="wireframe">
+                    <img src="imgs/Abogados.png" class="img-fluid mx-auto d-block">
+                    <p>Página de Abogados, en esta Página se podrá ver todos los Abogados que tiene la firma, con la separación por las Ramas Legales en las que están encargados, además de una sección en la parte superior para poder hacer filtros.
+                        En esta Página el Header cambiar de posición, de la parte superior al lateral izquierdo para brindar un diseño un poco diferente y destacado, permitiendo una interfaz más limpia.</p>
+                </div>
+                <h3>Nosotros</h3>
+                <div class="wireframe-reverse">
+                    <img src="imgs/Nosotros.png" class="img-fluid mx-auto d-block">
+                    <p>Página de Nosotros, en esta Página se muestra información de la Firma, yendo desde una breve descripción, los Fundadores y la Historia de Fundación de la misma.
+                        En esta Página el Header cambiar de posición, de la parte superior al lateral izquierdo para brindar un diseño un poco diferente y destacado, permitiendo una interfaz más limpia.</p>
+                </div>
+                <h3>Contacto</h3>
+                <div class="wireframe">
+                    <img src="imgs/Nosotros.png" class="img-fluid mx-auto d-block">
+                    <p>Página de Contacto, en esta Página se tendrá un Chat con implementación de IA, que le brindara un apoyo de la información que puedan necesitar los usuarios. 
+                        En esta Página el Header cambiar de posición, de la parte superior al lateral izquierdo para brindar un diseño un poco diferente y destacado, permitiendo una interfaz más limpia. </p>
+                </div>
+                <h3>Postulaciones</h3>
+                <div class="wireframe-reverse">
+                    <img src="imgs/Nosotros.png" class="img-fluid mx-auto d-block">
+                    <p>Página de Postulación, en esta Página los interesados de pertenecer a la Firma de Abogados podrán enviar sus hojas de vida para que sean estudiadas y posteriormente se les mande una respuesta de la postulación.
+                        En esta Página el Header cambiar de posición, de la parte superior al lateral izquierdo para brindar un diseño un poco diferente y destacado, permitiendo una interfaz más limpia. </p>
+                </div>
+                <h3>Login Procesos Internos</h3>
+                <div class="wireframe">
+                    <img src="imgs/Login_Internal_Process.png" class="img-fluid mx-auto d-block">
+                    <p>Página de Logueo, en esta Página es una Página Interna, por ello en las secciones públicas no se muestra referencia a ella, está en una dirección específica del Sitio Web, este está pensada para dar acceso a información de los Casos de los Abogados, y como método de seguridad y para la búsqueda de los casos se utiliza el Logueo.  
+                        En esta Página el Header cambiar de posición, de la parte superior al lateral izquierdo para brindar un diseño un poco diferente y destacado, permitiendo una interfaz más limpia.</p>
+                </div>
+                <h3>Procesos Asignados</h3>
+                <div class="wireframe-reverse">
+                    <img src="imgs/Info_Case.png" class="img-fluid mx-auto d-block">
+                    <p>Página de Procesos Asignados, en esta Página los abogados van a poder ver información de sus casos asignados.
+                        En esta Página el Header cambiar de posición, de la parte superior al lateral izquierdo para brindar un diseño un poco diferente y destacado, permitiendo una interfaz más limpia. </p>
+                </div>
+            </section>
+            <section class="Frameworks" id="Frameworks">
+                <h1 class="text-center">Frameworks</h1>
+                <h2>Bootstrap</h2>
+                <div class="framework">
+                    <img src="imgs/Bootstrap.png" style="height: 300px;">
+                    <p>Bootstrap es un Framwork de CSS que se Gestiona desde las Plantillas, y su objetivo es facilitar la aplicacion de Diseño a una Pagina Web </p>
+                </div>
+                <h2>Flask</h2>
+                <div class="framework-reverse">
+                    <img src="imgs/flask.png">
+                    <p>Flask es un Framework de Python que se usa principalmente para la Gestion de Rutas, Solicitudes y Respuestas a protocolos HTTP.
+                        Este Framework ademas permite el uso del Motor de Plantillas Jinja, lo que facilita insertar logica en plantillas HTML.
+                    </p>
+                </div>
+                <h2>Larabel</h2>
+                <div class="framework">
+                    <img src="imgs/Laravel.png" style="width: 300px;">
+                    <p>Larabel es un Framework de PHP que para el Desarrollo Web que brinda una estructura donde se separa un Proyecto en partes, como las Vistas de Usuario, Controladores que manejan las Solicitudes de los Usuarios y los Modelos que Gestionan los Datos.</p>
+                </div>
+                <h2>ASP .NET</h2>
+                <dv class="framework-reverse">
+                    <img src="imgs/ASP.png" alt="">
+                    <p>ASP .NET es un Framework de C#, sus Siglas hacen referencia a Active Server Pages Network Enabled Technologies que en español es (Tecnologias Habilidades para Redes de Paginas de Servidores Activas).
+                        Su principal funcion es la creacion de Paginas Web Dinamicas, APIs y Servicios en la Nube, al ser Desarrollado por Microsoft tiene versiones esclusivas de solo uso en Windows, pero tambien una version Core que funciona en otras Plataformas como Linux o Mac.</p>
+                </dv>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

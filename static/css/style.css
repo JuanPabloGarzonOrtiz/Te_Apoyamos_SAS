@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Ubuntu-Italic;
+    src: url(font/Ubuntu-Italic.ttf);
+}
+
+body{
+    background-color: rgb(56, 56, 56);
+}
+header{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 5px;
+}
+header nav a{
+    text-decoration: none;
+    color:rgb(119, 21, 21);
+    font: bold x-large Ubuntu-Italic; 
+}
+main, header nav a:hover{
+    color: white;
+}
+
+.proceso-div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    header{
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        width: min-content;
+        padding-top: 20px;
+    }
+    header nav a{
+        font-size:medium
+    }
+    header, header nav{
+        display: block !important;
+    }
+    main{
+        padding-left: 2%;
+    }
+}
+
+
+nav .menu, nav .menu .submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav .menu .submenu{
+    position: absolute;
+    display: none;
+    background-color: black;
+    color: rgb(119, 21, 21);
+    font: bold x-large Ubuntu-Italic; 
+    width: 300px;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+
+.wireframe, .wireframe-reverse, .framework, .framework-reverse{
+    display: flex;
+    gap: 3%;
+    margin: 0% 50px;
+    align-items: center;
+}
+.wireframe-reverse, .framework-reverse{
+    flex-direction: row-reverse;
+}
+.wireframe img, .wireframe-reverse img{
+    max-width: 50%;
+}
+.wireframe p, .wireframe-reverse p, .framework p, .framework-reverse p{
+    background-color: rgba(110, 11, 11, 0.428); 
+    padding: 2%;
+    height: min-content;
+}
+
+
+@media (max-width: 576px){
+    header nav a{
+        font-size:large
+    }
+    .wireframe, .wireframe-reverse, .framework, .framework-reverse{
+        display: block;
+        margin: 0;
+    }
+    .wireframe img, .wireframe-reverse img{
+        max-width: 100%;
+    }
+} 
