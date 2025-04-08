@@ -1,0 +1,118 @@
+/*Fuentes*/
+@font-face {
+    font-family: Ubuntu-Italic;
+    src: url("/fonts/Ubuntu-Italic.ttf");
+}
+/*Configuracion de Basica*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgba(119, 21, 21, 0.194);
+}
+
+/*Header - Posición inicial*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgba(255, 255, 255, 0.375);
+}
+.logo{
+    height: 100px;
+}
+header nav{
+    display: flex; 
+    gap: 30px;
+}
+header nav a{
+    text-decoration: none;
+    color:  rgb(126, 35, 35);
+    font: bold x-large Ubuntu-Italic;
+}
+.menu-desplegable{
+    display: none;
+}
+
+
+/* Modificación al hacer scroll */
+.scrolled{
+    header {
+        justify-content: flex-start;
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: min-content;
+        padding-top: 20px;
+        background-color: rgb(126, 35, 35);
+    }
+    .logo {
+        height: 60px;
+    }
+    header nav {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 30px;
+        justify-content: space-between;
+        height: 100%;
+    }
+    header nav a {
+        margin: auto;
+        color: white;
+    }
+    main >*:not(.postulaciones) {
+        margin-left: 77px; /* Ajustar según el tamaño del Header lateral */
+        width: 93%;
+    }
+}
+
+@media (max-width:700px){
+    main >*:not(.welcome, .postulaciones){
+        padding: 0 1%;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100vw;
+        background-color: rgb(126, 35, 35);
+    }
+    .logo{
+        content: url(/images/logo-white.png);
+        width: 70px;
+        height: 70px;
+    }
+    header nav {
+        opacity: 0;
+        padding: 0px;
+        top: 80px;
+        right: 50px;
+    }
+    header nav a{
+        color: white;
+    }
+    header .menu-desplegable{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    header .menu-desplegable:hover + nav, header nav:hover {
+        position: absolute;
+        z-index: 2;
+        flex-direction: column;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        pointer-events: auto;
+        background-color: rgba(255, 255, 255, 0.371);
+    }
+}
