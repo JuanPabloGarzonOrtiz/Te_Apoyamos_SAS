@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    @vite(['resources/css/style-internalProcess.css'])
+    <link rel="stylesheet" href="/build/assets/style-internalProcess.css">
 </head>
 <body class="body-login">
-    <form method="GET" action="" enctype="multipart/form-data">
+    <form method="POST" action="{{ route('form.login') }}" enctype="multipart/form-data">
+        @csrf
         <h1>Usuario</h1>
         <hr>
-        <input type="text">
+        <input type="text" name="email">
         <h1>Contraseña</h1>
         <hr>
-        <input type="password">
-        <button>
-            <a  class="button" href="{{ route('dashboard') }}">Ingresar</a>
-        </button>
+        <input type="password" name="password">
+        <button type="submit" style="color:white;">Ingresar</button>
     </form>
 </body>
 </html>

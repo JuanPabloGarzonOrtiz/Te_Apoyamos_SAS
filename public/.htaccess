@@ -23,3 +23,22 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
+# MIME types para CSS y JS
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType application/javascript .js
+</IfModule>
+
+# Forzar codificación UTF-8
+AddDefaultCharset UTF-8
+
+# Configurar encabezados CORS
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# Deshabilitar compresión (opcional, para pruebas)
+# Nota: Remueve esto más adelante si no es necesario
+SetEnv no-gzip 1
+

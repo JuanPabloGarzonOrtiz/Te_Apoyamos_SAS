@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info_Service</title>
-    @vite(['resources/js/app.js'])
-    @vite(['resources/css/style-main.css'])
-    @vite(['resources/css/style.css'])
+    <link rel="stylesheet" href="/build/assets/style.css">
+    <link rel="stylesheet" href="/build/assets/style-main.css">
+    <script src="/build/assets/app.js"></script>
 </head>
     <body>
         <header>

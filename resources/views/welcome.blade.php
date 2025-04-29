@@ -4,10 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Analisis de Requerimientos</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        @vite(['resources/js/app.js'])
-        @vite(['resources/css/style-main.css'])
-        @vite(['resources/css/style.css'])
+        <link rel="stylesheet" href="/build/assets/style.css">
+        <link rel="stylesheet" href="/build/assets/style-main.css">
+        <script src="/build/assets/app.js"></script>
     </head>
     <body>
         <img class="background-welcome" src="/images/background-index.png">
@@ -30,7 +29,7 @@
                 <h1>Más que la Civilización, la Justicia es la Necesidad del Pueblo</h1>
                 <div class="separador_Welcome"></div>
                 <div>
-                    <button>Solicitud de Asesoría</button>
+                    <button><a href="/chat">Solicitud de Asesoría</a></button>
                 </div>
             </section>
             <section class="areas_de_Practica" id="areas_de_Practica">
@@ -123,7 +122,7 @@
             </section>
             <section class="postulaciones" id="postulaciones">
                 <h1 class="title_postulacion">Haz Parte de Nuestra Firma de Abogados</h1>
-                <button>Hoja de Vida</button>
+                <button><a href="/postulacion">Hoja de Vida</a></button>
             </section>
         </main>
     </body>

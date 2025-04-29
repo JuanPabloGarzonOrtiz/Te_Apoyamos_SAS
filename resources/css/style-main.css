@@ -27,7 +27,7 @@
     margin: 80px;
     line-height: 2;
 }
-.areas_de_Practica h1, .abogados h1, .nosotros h1, .servicio h1,.abogados h2{
+.areas_de_Practica h1, .abogados h1, .nosotros h1, .servicio h1,.abogados h2, .formPostulation h1{
     text-align: center; 
     padding-top: 40px;
     font: bold 40px Ubuntu-Italic;
@@ -57,8 +57,9 @@
     border-radius: 10px;
 }
 /*Botones*/
-.welcome button, .postulaciones button, .servicio button{
+.welcome button, .welcome a, .postulaciones button, .servicio button, .postulaciones button a, .formPostulation .HV label, .formPostulation button{
     color: white;
+    text-decoration: none;
     background-color: rgba(109, 5, 5, 0.663);
     border: none;
     border-radius: 30px;
@@ -85,16 +86,48 @@
     outline: none;
 }
 /*Secciones Especificas*/
-.welcome{
+.welcome, .mainform{
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
 }
-.welcome div, .servicio div{
+
+.welcome div, .servicio div, .formPostulation div{
     display: flex;
     justify-content: center;
 }
+.formPostulation{
+    text-align: center;
+}
+.formPostulation div{
+    justify-content: center;
+    align-items: center;
+}
+.formPostulation div h2{
+    width:250px;
+}
+.formPostulation div h2:not(.HV h2){
+    width:150px;
+}
+.formPostulation input{
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+}
+.formPostulation .HV input{
+    display: none;
+}
+.formPostulation .HV label{
+    cursor: pointer;
+    font: bold 20px Ubuntu-Italic;
+    margin: 0;
+}
+.formPostulation button{
+    text-align: center;
+    margin: 30px;
+}
+
 .postulaciones{
     background-image: url("/images/background-contrataciones.png");
     background-size: cover;
@@ -106,6 +139,7 @@
     align-items: center;
     gap: 100px;
 }
+
 .main-chat{
     display: flex;
     width: 100vw;
@@ -123,6 +157,9 @@
 /*Sepradores*/
 .separador_Welcome{
     flex-grow: 0.5;
+}
+.separador_Form{
+    flex-grow: 0.3;
 }
 /*Filtros de Abogados*/
 .options_Filtrer, .options_Filtrer div{
