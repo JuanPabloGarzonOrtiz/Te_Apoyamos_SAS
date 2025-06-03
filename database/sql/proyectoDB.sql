@@ -143,7 +143,7 @@ INSERT INTO Especialidades_Juridicas(nombre_Area_Practica, descripción, ambito_
 		'{"jurisdicción": "Nacional e Internacional","tipo_de_casos": ["Delitos informáticos", "Protección de datos personales", "Ciberseguridad", "Contratos electrónicos", "Propiedad intelectual digital"],"instituciones_relacionadas": ["Agencias de Protección de Datos", "Tribunales de Delitos Informáticos", "Organismos de Ciberseguridad", "Organización Mundial de la Propiedad Intelectual (OMPI)"],"leyes_aplicables": ["Ley de Protección de Datos", "Normativa de Ciberdelitos", "Regulación de Comercio Electrónico", "Convenio de Budapest sobre Cibercriminalidad"]}',
 		1);
 
-INSERT INTO Abogados (nombre_Abogado, rol_Abogado, contraseña, titulo_Profesional, titulo_Especialización, registro_Colegio_Abogados, cedula_de_Cuidadania, telefono, correo, idiomas, id_Especialidad)  
+INSERT INTO Abogados (nombre_Abogado, rol_Abogado, contraseña, titulo_Profesional, titulo_Especialización, registro_Colegio_Abogados, cedula_de_Ciudadania, telefono, correo, idiomas, id_Especialidad)  
 	VALUES  
 		('Abraham Lincoln','Fundador','12345','Abogado','','1836-IL-AL-001','1836-001','+13125551836','abraham.lincoln@illinoislaw.com','{"idiomas":["Inglés"]}',2),  
 		('Mahatma Gandhi','Fundador','67890','Abogado de la Corte','','1891-UK-MG-001','1756-001','+442079461891','mahatma.gandhi@uklaw.com','{"idiomas":["Inglés","Hindi","Gujarati","Afrikaans"]}',2),  

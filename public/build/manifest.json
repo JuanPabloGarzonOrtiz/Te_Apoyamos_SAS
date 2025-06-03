@@ -1,0 +1,18 @@
+{
+  "resources/css/style-main.css": {
+    "file": "assets/style-main-B2y-_B34.css",
+    "src": "resources/css/style-main.css",
+    "isEntry": true
+  },
+  "resources/css/style.css": {
+    "file": "assets/style-Dxe-kWBc.css",
+    "src": "resources/css/style.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DwusrCg4.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}

@@ -6,7 +6,7 @@
 
     Route::get('/', function () {
         $dbService = new DatabaseService();
-        $especialidades = $dbService->servicesDB();
+        $especialidades = (new DatabaseService())-> servicesDB();
         $abogados = $dbService->abogadosDB();
         return view('welcome', ["especialidades" => $especialidades],["abogados" =>$abogados]);
     })->name('home');
@@ -16,7 +16,7 @@
     })->name('chat');
 
     Route::get("/service", function(){
-        $data = new DatabaseService() -> servicesDB();
+        $data = (new DatabaseService())-> servicesDB();
         return view("pages.info_Service", ["especialidades" => $data]);
     })->name("service");
 
