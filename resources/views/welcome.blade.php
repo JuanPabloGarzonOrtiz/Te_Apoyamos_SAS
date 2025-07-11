@@ -39,14 +39,14 @@
                         @if ($especialidad->especialidad == 1)
                             @php
                                 $datos = json_encode([
-                                    'nombre' => $especialidad->nombre_Area_Practica,
+                                    'nombre' => $especialidad->nombre_area_practica,
                                     'descripcion' => $especialidad->descripción
                                 ]);
                             @endphp
                             <a href="/service?data={{ base64_encode($datos) }}">
-                                <div class="especialidad" data-nombre="{{ $especialidad->nombre_Area_Practica }}">
+                                <div class="especialidad" data-nombre="{{ $especialidad->nombre_area_practica }}">
                                     <div class="svg-container"></div>
-                                    <p>{{ $especialidad->nombre_Area_Practica }}</p>
+                                    <p>{{ $especialidad->nombre_area_practica }}</p>
                                 </div>
                             </a>
                         @endif
@@ -57,14 +57,14 @@
                             @if ($especialidad->especialidad != 1)
                                 @php
                                     $datos = json_encode([
-                                        'nombre' => $especialidad->nombre_Area_Practica,
+                                        'nombre' => $especialidad->nombre_area_practica,
                                         'descripcion' => $especialidad->descripción
                                     ]);
                                 @endphp
                                 <a href="/service?data={{ base64_encode($datos) }}">
-                                    <div class="otros_servicios" data-nombre="{{ $especialidad->nombre_Area_Practica }}">
+                                    <div class="otros_servicios" data-nombre="{{ $especialidad->nombre_area_practica }}">
                                         <div class="svg-container"></div>
-                                        <p>{{ $especialidad->nombre_Area_Practica }}</p>
+                                        <p>{{ $especialidad->nombre_area_practica }}</p>
                                     </div>
                                 </a>
                             @endif
@@ -84,18 +84,18 @@
                     </div>
                 </div>
                 @php
-                    $especialidades = array_column($abogados, 'nombre_Area_Practica');
+                    $especialidades = array_column($abogados, 'nombre_area_practica');
                     $especialidades_Filtradas = array_unique($especialidades);
                 @endphp
                 @foreach ($especialidades_Filtradas as $especialidad)
                     <h1>{{$especialidad}}</h1>
                     <div class="div-abogados">
                         @foreach ($abogados as $abogado)
-                            @if ($abogado->nombre_Area_Practica == $especialidad)
+                            @if ($abogado->nombre_area_practica == $especialidad)
                                 <div class="abogado">
                                     <img src="/images/foto_Abogado.jpg" alt="">
-                                    <p>{{$abogado->nombre_Abogado}}</p>
-                                    <p>{{$abogado->titulo_Profesional}}</p>
+                                    <p>{{$abogado->nombre_abogado}}</p>
+                                    <p>{{$abogado->titulo_profesional}}</p>
                                 </div>
                             @endif
                         @endforeach
@@ -108,11 +108,11 @@
                 <h1>Fundadores</h1>
                 <div class="div-abogados">
                     @foreach ($abogados as $abogado)
-                        @if ($abogado->rol_Abogado == "Fundador")
+                        @if ($abogado->rol_abogado == "Fundador")
                             <div class="abogado">
                                 <img src="/images/foto_Abogado.jpg" alt="">
-                                <p>{{$abogado->nombre_Abogado}}</p>
-                                <p>{{$abogado->titulo_Profesional}}</p>
+                                <p>{{$abogado->nombre_abogado}}</p>
+                                <p>{{$abogado->titulo_profesional}}</p>
                             </div>
                         @endif
                     @endforeach

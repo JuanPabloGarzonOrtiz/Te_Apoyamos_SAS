@@ -13,9 +13,9 @@
     <section class="section-data">
         <img class="logo-casos" src="/images/logo.png" alt="">
         <div>
-            <p><dfn>Nombre: </dfn>{{ $data[0]->nombre_Abogado }}</p>
-            <p><dfn>Titulo Profesional: </dfn>{{$data[0]->titulo_Profesional}}</p>
-            <p><dfn>Puesto Asignado: </dfn>{{$data[0]->rol_Abogado}}</p>
+            <p><dfn>Nombre: </dfn>{{ $data[0]->nombre_abogado }}</p>
+            <p><dfn>Titulo Profesional: </dfn>{{$data[0]->titulo_profesional}}</p>
+            <p><dfn>Puesto Asignado: </dfn>{{$data[0]->rol_abogado}}</p>
         </div>
         <img  class="photo_Abogado" src="/images/foto_Abogado.jpg" alt="">
     </section>

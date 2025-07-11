@@ -40,14 +40,14 @@
                     @foreach ($especialidades as $especialidad)
                         @php
                             $datos = json_encode([
-                                'nombre' => $especialidad->nombre_Area_Practica,
+                                'nombre' => $especialidad->nombre_area_practica,
                                 'descripcion' => $especialidad->descripción
                             ]);
                         @endphp
                         <a href="/service?data={{ base64_encode($datos) }}">
-                            <div class="otros_servicios" data-nombre="{{ $especialidad->nombre_Area_Practica }}">
+                            <div class="otros_servicios" data-nombre="{{ $especialidad->nombre_area_practica }}">
                                 <div class="svg-container"></div>
-                                <p>{{ $especialidad->nombre_Area_Practica }}</p>
+                                <p>{{ $especialidad->nombre_area_practica }}</p>
                             </div>
                         </a>
                     @endforeach

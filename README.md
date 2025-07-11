@@ -6,7 +6,7 @@ En desarrollo
 
 ## Tecnologías Usadas
 - PHP 8.4
-- MySQL 
+- PostGreSQL 
 - HTML5 & CSS3 
 - JavaScript 
 - Laravel *(Framework)*
