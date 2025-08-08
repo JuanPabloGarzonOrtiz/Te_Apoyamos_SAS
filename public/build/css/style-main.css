@@ -1,0 +1,164 @@
+@font-face {
+    font-family: Ubuntu-Italic;
+    src: url("../assets/fonts/Ubuntu-Italic.ttf");
+}
+
+/*Seccion de Servicios*/
+.servicios_Destacados, .otros_Servicios, .div-abogados{
+    display: flex;
+    overflow: auto;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font: x-large Ubuntu-Italic;
+    text-align: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+.servicios_Destacados a, .otros_Servicios a{
+    color: white;
+    text-decoration: none;
+}
+.especialidad, .otros_servicios{
+    width: clamp(200px, 30vw, 300px);
+    height: clamp(100px, 45vh, 400px);
+    background: linear-gradient(to bottom,rgb(10 10 10),rgba(119 21 21 / 0.77));
+    padding: 0.5%;
+}
+.svg-container svg{
+    width: clamp(70px, 30vw, 300px);
+    height: clamp(70px, 30vw, 300px);
+}
+.areas_de_Practica h1, .abogados h1, .abogados h2, .nosotros h1, .servicio h1, .formPostulation h1{
+    text-align: center;
+    font: bold clamp(5px, 5vw, 60px) Ubuntu-Italic;
+    color:rgb(228 175 175);
+}
+.servicio h1{
+    margin-top: clamp(60px, 10vw, 0px);
+}
+
+/*Abogados*/
+.abogados h2{
+    font-size: clamp(5px, 5vw, 50px);
+}
+.options_Filtrer, .options_Filtrer div{
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+}
+.options_Filtrer div input{
+    background-color: black;
+    border-radius:  10px;
+    color: white;
+}
+.abogado img{
+    width: clamp(200px, 30vw, 250px);;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.abogado {
+    font: x-large Ubuntu-Italic;
+    text-align: center;
+}
+
+/*Nosotros*/
+.nosotros p:not(.abogado *), .servicio p{
+    font: large Ubuntu-Italic;
+    width: 95%;
+    margin: 30px 10px;
+}
+
+/*Postulaciones*/
+.postulaciones{
+    background-image: url("../assets/img/background-contrataciones.png");
+    background-size: cover;
+    width: 100%;   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+}
+.separador_Form{
+    flex-grow: 0.5;
+}
+.formPostulation{
+    text-align: center;
+    font: bold clamp(5px, 3vw, 20px) Ubuntu-Italic;
+}
+.formPostulation div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 3%;
+}
+.formPostulation input{
+    border-radius: 10px;
+    height: 30px;
+    width: clamp(50px, 50vw, 300px);
+}
+.formPostulation .HV input{
+    display: none;
+}
+.formPostulation .HV label{
+    cursor: pointer;
+    font: bold 20px Ubuntu-Italic;
+    margin: 0;
+}
+
+/*Chat*/
+
+.main-chat{
+    display: flex;
+}
+.main-chat input{
+    position: absolute;
+    bottom: 1%;
+    margin-left: 80px;
+    width: clamp(10%,88vw,100%);
+    height: 50px;
+    border: solid black;
+    border-radius: 20px;
+    font:  clamp(5px, 5vw, 20px) Ubuntu-Italic;
+}
+
+.svg-send svg{
+    position: absolute;
+    right: clamp(0%, 50vw, 1%);
+    bottom: clamp(1%, 0vw, 2%);
+    width: clamp(40px, 13vw, 60px);
+}
+
+@media (max-width: 1300px){
+    .main-chat input{
+        width: clamp(50%,82vw,100%);
+    }
+}
+@media (max-width: 975px){
+    .main-chat input{
+        margin-left: 2%;
+    }
+}
+@media (max-width: 880px){
+    .especialidad, .otros_servicios{
+        height: clamp(50px, 50vh, 290px);
+    }
+    .svg-container svg{
+        width: 200px;
+        height: 200px;
+    }
+    .formPostulation div{
+        margin: 3%;
+    }
+    .servicio h1{
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 650px){
+    .options_Filtrer{
+        flex-direction: column;
+    }
+}

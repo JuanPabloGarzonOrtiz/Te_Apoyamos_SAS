@@ -1,0 +1,95 @@
+/*Fuente*/
+@font-face {
+    font-family: Ubuntu-Italic;
+    src: url("/fonts/Ubuntu-Italic.ttf");
+}
+
+.body-login{
+    background-image: url("../assets/img/logo.png");
+    background-color: rgba(0, 0, 0, 0.715);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1, input{
+    color: white;
+    font: bold 50px Ubuntu-Italic; 
+}
+body h1 {
+    margin-bottom: 0;
+    margin-left: 30%;
+}
+hr{
+    background-color: white;
+    width: 40%;
+    height: 5px;
+    margin-bottom: 30px;
+}
+body input{
+    background-color: rgba(109, 5, 5, 0.366);
+    border: none;
+    border-radius: 40px;
+    width: 40%;
+    height: 10%;
+    margin-left: 30%;
+    margin-bottom: 30px;
+}
+body button{
+    background-color: black;
+    color:  rgb(109, 5, 5);
+    border: none;
+    border-radius:40px;
+    width: 20%;
+    font: bold 40px Ubuntu-Italic; 
+    margin-left: 40%;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.section-data{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.section-data div{
+    background-color: black;
+    color: white;
+    font: bold 25px Ubuntu-Italic;
+    width: 50%;
+    border-radius: 20px;
+    padding: 1%;
+}
+.logo-casos, .photo_Abogado{
+    width: 15%;
+    height: 15%;
+    border-radius: 10%;
+}
+
+/*Tabla*/
+.section-table{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border: black solid  1px;
+    border-collapse: separate;
+    width: 95%;
+}
+table thead{
+    background-color: black;
+    color: white;
+    border: black solid  1px;
+    font: bold 25px Ubuntu-Italic;
+}
+
+td, th{
+    border: black solid  1px;
+    font: 20px Ubuntu-Italic;
+}
